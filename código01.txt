@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace If_e_demais
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("olá seja bem vindo(a) este projeto \nmas para continuar é necessario a senha do criador! \n");
+            Console.WriteLine("Qual a senha? ");
+            string senha = Console.ReadLine();
+            const string Sen = "FBS";
+            if (senha == Sen || senha == "FB")
+            {
+                // para entender melhor operadores condicionais
+                // acesse a pasta do seu pc "C#"
+                Console.WriteLine("seja bem vindo(a), agora preciso que me responda uma coisa! ");
+                Console.WriteLine("Qual a sua Idade?");
+                int idade = int.Parse(Console.ReadLine());  //se tiver duvidas acesse a pasta C# do seu pc
+                if (idade >= 1 && idade <= 11)
+                {
+                    Console.WriteLine("Você Possui a idade de uma criança!");
+                }
+                else if (idade >= 12 && idade <= 17)
+                {
+                    Console.WriteLine("Você é um adoleçente!");
+                }
+                else if (idade >= 18 && idade <= 60)
+                {
+                    Console.WriteLine("Você já é adulto!");
+                }
+                else if (idade >= 60 && idade <= 105)
+                {
+                    Console.WriteLine("você já é idoso!");
+                }
+                else
+                {
+                    Console.WriteLine("Números Estrapolados!");
+                }
+                Console.WriteLine("Fim!");
+            }
+            else if (senha == "fbs")
+            {
+                Console.WriteLine("A senha esta Quase correta");
+            }
+            else
+            {
+                Console.WriteLine("senha Incorreta! ");
+            }
+            Console.ReadLine();
+        }
+    }
+}

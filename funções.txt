@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace funções
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Valorlucro(50);    2// aqui eu "printei" a função na main(principal) e Necesariamente o lucro tava sem nada, então dei um valor 
+            Console.ReadLine();
+        }
+        
+        static void Valorlucro(int lucro)   1//aqui eu criei uma função e dentro do parenteses eu criei um paramentro do tipo int 
+        {                                       e dei o nome de lucro. Dentro da função eu "printei" o lucro 
+            Console.WriteLine(lucro);
+        }
+    }
+}
+
+
